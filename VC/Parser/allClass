@@ -1,0 +1,67 @@
++ AST(SourcePosition position)
+  = Program(List dlAST)
+
+  + List
+    = DeclList(Decl dAST, List dlList)
+    = EmptyDeclList()
+    = StmtList(Stmt sAST, List slList)
+    = EmptyStmtList()
+    = ParaList(ParaDecl pAST, List plList)
+    = EmptyParaList()
+    = ExprList(Expr sAST, List elList)
+    = EmptyExprList()
+    = ArgList(Arg aAST, List alList)
+    = EmptyArgList()
+
+  + Decl
+    = FuncDecl(Type tAST, Ident idAST, List fplAST, Stmt cAST)
+    = GlobalVarDecl(Type tAST, Ident idAST, Expr eAST)
+    = LocalVarDecl(Type tAST, Ident idAST, Expr eAST)
+    = ParaDecl(Type tAST, Ident idAST)
+
+  + Expr
+    = VarExpr(Var vAST)
+    = AssignExpr(Expr e1AST, Expr e2AST)
+    = BinaryExpr(Expr e1AST, Operator oAST, Expr e2AST)
+    = UnaryExpr(Operator oAST, Expr eAST)
+    = CallExpr(Ident idAST, List aplAST)
+    = IntExpr(IntLiteral ilAST)
+    = BooleanExpr(BooleanLiteral slAST)
+    = FloatExpr(FloatLiteral flAST)
+    = StringExpr(StringLiteral flAST)
+    = ArrayExpr(Var idAST, Expr indexAST)
+    = InitExpr(List ilAST)
+    = Arg(Expr eAST)
+    = EmptyExpr()
+
+  + Stmt
+    = CompoundStmt(List dlAST,  List slAST)
+    = IfStmt(Expr eAST, Stmt s1AST (, Stmt s2AST)?)
+    = ForStmt(Expr e1AST, Expr e2AST, Expr e3AST, Stmt sAST)
+    = WhileStmt(Expr eAST, Stmt sAST)
+    = ExprStmt(Expr eAST)
+    = ContinueStmt()
+    = BreakStmt()
+    = ReturnStmt(Expr eAST)
+    = EmptyCompStmt()
+    = EmptyStmt()
+
+  + Type
+    = IntType()
+    = FloatType()
+    = BooleanType()
+    = StringType()
+    = VoidType()
+    = ArrayType(Type tAST, Expr dAST)
+    = ErrorType()
+
+  + Var
+    = SimpleVar(Ident idAST)
+  
+  + Terminal
+    = Ident(String value)
+    = Operator(String value)
+    = IntLiteral(String value)
+    = FloatLiteral(String value)
+    = BooleanLiteral(String value)
+    = StringLiteral(String value)

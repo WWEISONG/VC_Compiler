@@ -1,0 +1,7 @@
+int f(int i, float r, int i, void k[]) {
+
+    i = 1;
+}
+void main() {
+
+}

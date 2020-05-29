@@ -1,0 +1,76 @@
+./VC/Parser/Parser.java:162: error: '(' expected
+    } else if { // global-val-decl
+             ^
+./VC/Parser/Parser.java:162: error: illegal start of expression
+    } else if { // global-val-decl
+              ^
+./VC/Parser/Parser.java:353: error: ';' expected
+    List dlAST = parseValDeclList(null, null, stmtPos, 1)
+                                                         ^
+./VC/Parser/Parser.java:424: error: '(' or '[' expected
+    SourcePosition ifPos = new SourcePosition;
+                                             ^
+./VC/Parser/Parser.java:452: error: '(' or '[' expected
+    SourcePosition forPos = new SourcePosition;
+                                              ^
+./VC/Parser/Parser.java:479: error: '(' or '[' expected
+    SourcePosition whilePos = new SourcePosition;
+                                                ^
+./VC/Parser/Parser.java:496: error: '(' or '[' expected
+    SourcePosition breakPos = new SourcePosition;
+                                                ^
+./VC/Parser/Parser.java:510: error: '(' or '[' expected
+    SourcePosition continuePos = new SourcePosition;
+                                                   ^
+./VC/Parser/Parser.java:525: error: '(' or '[' expected
+    SourcePosition returnPos = new SourcePosition;
+                                                 ^
+./VC/Parser/Parser.java:639: error: ';' expected
+      copyStart(conOrStartPos, conOrExprPos)
+                                            ^
+./VC/Parser/Parser.java:701: error: ';' expected
+      copyStart(relExprStartPos, relExprPos)
+                                            ^
+./VC/Parser/Parser.java:231: error: cannot find symbol
+          dlAST = new DeclList(dAST, new EmptyDeclList(dummyPos), funcPos);
+                                                                  ^
+  symbol:   variable funcPos
+  location: class Parser
+./VC/Parser/Parser.java:257: error: cannot find symbol
+    copyStart(valPos, vaDecllPos);
+                      ^
+  symbol:   variable vaDecllPos
+  location: class Parser
+./VC/Parser/Parser.java:263: error: variable tAST is already defined in method parseValDecl(Type,Ident,SourcePosition,int)
+      Type tAST = parseType();
+           ^
+./VC/Parser/Parser.java:264: error: variable iAST is already defined in method parseValDecl(Type,Ident,SourcePosition,int)
+      Ident iAST = parseIdent();
+            ^
+./VC/Parser/Parser.java:266: error: variable iAST is already defined in method parseValDecl(Type,Ident,SourcePosition,int)
+      Ident iAST = parseIdent();
+            ^
+./VC/Parser/Parser.java:270: error: cannot find symbol
+      tAST = parseArrayType(tAST, vaDeclListlPos);
+                                  ^
+  symbol:   variable vaDeclListlPos
+  location: class Parser
+./VC/Parser/Parser.java:281: error: cannot find symbol
+      eAST = EmptyExpr(dummyPos);
+             ^
+  symbol:   method EmptyExpr(SourcePosition)
+  location: class Parser
+./VC/Parser/Parser.java:329: error: cannot find symbol
+      Start(intPos);
+      ^
+  symbol:   method Start(SourcePosition)
+  location: class Parser
+./VC/Parser/Parser.java:341: error: incompatible types: Type cannot be converted to ArrayType
+    return arrayTypeAST;
+           ^
+./VC/Parser/Parser.java:862: error: incompatible types: Decl cannot be converted to ParaDecl      pAST = parseParaDecl();
+                          ^
+./VC/Parser/Parser.java:948: error: incompatible types: Expr cannot be converted to Arg
+    return aAST;
+           ^
+22 errors

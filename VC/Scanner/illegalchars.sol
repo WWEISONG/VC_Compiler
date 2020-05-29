@@ -1,0 +1,10 @@
+======= The VC compiler =======
+Kind = 38 [<error>], spelling = "^", position = 1(1)..1(1)
+Kind = 34 [<int-literal>], spelling = "5", position = 1(2)..1(2)
+Kind = 38 [<error>], spelling = "&", position = 1(3)..1(3)
+Kind = 38 [<error>], spelling = "@", position = 1(4)..1(4)
+Kind = 13 [*], spelling = "*", position = 1(5)..1(5)
+Kind = 15 [!], spelling = "!", position = 1(6)..1(6)
+Kind = 38 [<error>], spelling = "~", position = 1(7)..1(7)
+Kind = 33 [<id>], spelling = "myname", position = 1(8)..1(13)
+Kind = 39 [$], spelling = "$", position = 5(3)..5(3)

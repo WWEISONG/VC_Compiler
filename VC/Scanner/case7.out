@@ -1,0 +1,4 @@
+======= The VC compiler =======
+ERROR: 1(1)..1(25): \: illegal escape character
+Kind = 37 [<string-literal>], spelling = "This is a right string \ ", position = 1(1)..1(27)
+Kind = 39 [$], spelling = "$", position = 1(28)..1(28)
