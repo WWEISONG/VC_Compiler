@@ -10,7 +10,6 @@
  * You need to modify the supplied parsing methods (if necessary) and 
  * add the missing ones to obtain a parser for the VC language.
  *
- * (27---Feb---2019)
 
 program       -> func-decl
 

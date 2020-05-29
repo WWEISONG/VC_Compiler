@@ -1,7 +1,5 @@
 /*
  *** Emitter.java 
- *** Sun  4 Apr 23:21:06 AEST 2020
- *** Jingling Xue, School of Computer Science, UNSW, Australia
  */
 
 // A new frame object is created for every function just before the

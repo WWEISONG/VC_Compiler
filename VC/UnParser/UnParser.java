@@ -11,7 +11,6 @@
  * programming styles. For example, it is fairly straightforward to
  * write a converter between C and Pascal.
  *
- * --- Jingling
  */
 
 package VC.UnParser;

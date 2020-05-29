@@ -2,8 +2,6 @@
  * SourcePosition.java    
  */
 
-// ====== PLEASE DO NOT MODIFY THIS FILE =====
-
 // This class is used to store the positions of tokens and phrases
 
 package VC.Scanner;

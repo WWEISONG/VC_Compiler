@@ -3,8 +3,7 @@
  *
  * Prints the AST in the text form, which can be used 
  *  (1) either for automarking, or
- *  (2) for debugging the parser
- * --- Jingling
+ *  (2) for debugging the parsersss
  */
 
 package VC.TreePrinter;
